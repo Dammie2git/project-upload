@@ -8,3 +8,7 @@ app.listen(port, function() {
 // Mount the public directory at /
 app.use('/', express.static('./public'));
 console.log('deploy public');
+
+app.use('/time', function(req, res) {
+    res.json(Date.now());
+});
