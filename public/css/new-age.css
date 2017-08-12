@@ -541,3 +541,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222222;
 }
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid black;
+    width: 120px;
+}

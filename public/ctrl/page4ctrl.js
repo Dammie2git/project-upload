@@ -1,5 +1,5 @@
 angular.module('page4App', [])
-    .controller('page4Ctrl', function() {
+    .controller('page4Ctrl', function($scope, $http) {
         var todoList = this;
         todoList.todos = [
             { text: 'Yes', done: true },

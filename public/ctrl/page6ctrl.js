@@ -1,11 +1,11 @@
-angular.module('page1App', [])
-    .controller('page1Ctrl', function() {
+angular.module('page6App', [])
+    .controller('page6Ctrl', function($scope, $http) {
         var todoList = this;
         todoList.todos = [
-            { text: 'App', done: true },
-            { text: 'Website', done: false },
-            { text: 'Game', done: false },
-            { text: 'Dont know to be honest', done: false }
+            { text: 'Yes', done: true },
+            { text: 'No', done: false },
+            { text: 'Maybe/Not Sure', done: false },
+            { text: 'Yes for now until it gets bigger', done: false }
         ];
 
         todoList.addTodo = function() {
@@ -21,7 +21,13 @@ angular.module('page1App', [])
             return count;
         };
 
-
+        todoList.archive = function() {
+            var oldTodos = todoList.todos;
+            todoList.todos = [];
+            angular.forEach(oldTodos, function(todo) {
+                if (!todo.done) todoList.todos.push(todo);
+            });
+        };
     });
 
 /*var page4 = angular.module('page4', ["checklist-model"])

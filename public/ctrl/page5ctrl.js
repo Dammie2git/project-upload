@@ -1,11 +1,11 @@
-angular.module('page6App', [])
-    .controller('page6Ctrl', function() {
+angular.module('page5App', [])
+    .controller('page5Ctrl', function($scope, $http) {
         var todoList = this;
         todoList.todos = [
             { text: 'Yes', done: true },
             { text: 'No', done: false },
-            { text: 'Maybe/Not Sure', done: false },
-            { text: 'Yes for now until it gets bigger', done: false }
+            { text: 'Dont care for design', done: false },
+            { text: 'Beauty is everything to me', done: false }
         ];
 
         todoList.addTodo = function() {
