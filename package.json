@@ -1,0 +1,24 @@
+{
+    "name": "project-upload",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Dammie2git/project-upload.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Dammie2git/project-upload/issues"
+    },
+    "homepage": "https://github.com/Dammie2git/project-upload#readme",
+    "dependencies": {
+        "express": "^4.15.4"
+    }
+}

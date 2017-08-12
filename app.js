@@ -1,8 +1,8 @@
 var express = require('express')
 var app = express();
-
-app.listen(3001, function() {
-    console.log('Listening on 3001');
+var port = process.env.PORT || 3001;
+app.listen(port, function() {
+    console.log('Listening on port' + port);
 });
 
 // Mount the public directory at /
